@@ -51,12 +51,12 @@
 }
 
 #slider-show{
-    background-color: rgb(33, 31, 32);
-    width: 85%;
-    height: 200px;
+    background-color: rgb(190, 29, 29);
+    width: 90%;
     margin: auto;
-    margin-top: 20px;
-    border-radius: 15px;
+    height: 180px;
+    margin-top: 10px;
+    border-radius: 20px;
     overflow: hidden;
 }
 
@@ -201,10 +201,60 @@
 }
 
 #btn-whatsapp > img{
-    width: 175px;
-    position: fixed;
+    width: 80px;
+}
+
+#btn-whatsapp{
+    position:fixed;
+    width: 80px;
+    height: 80px;
     left: 0;
     bottom: 0;
-    margin-left: 10px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+
+#btn-whatsapp:before, #btn-whatsapp::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: -20px;
+    right: -20px;
+    top: -20px;
+    bottom: -20px;
+    border-radius: 50%;
+    border: 2px solid rgb(50, 174, 52);
+    animation: animar 1.5s linear infinite;
+    opacity: 0;
+}
+
+#btn-whatsapp::after{
+    animation-delay: 0.5s;
+}
+
+@keyframes animar {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+
+    50%{
+        opacity: 1;
+    }
+
+    100%{
+        transform: scale(1.2);
+        opacity: 0;
+    }
+}
+
+#btn-what > a > img{
+    width: 80px;
+    position:fixed;
+    width: 80px;
+    height: 80px;
+    left: 0;
+    bottom: 0;
+    margin-left: 50px;
     margin-bottom: 20px;
 }
