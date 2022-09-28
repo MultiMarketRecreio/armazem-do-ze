@@ -53,7 +53,7 @@
 #slider-show{
     background-color: rgb(33, 31, 32);
     width: 85%;
-    height: 160px;
+    height: 200px;
     margin: auto;
     margin-top: 20px;
     border-radius: 15px;
@@ -105,12 +105,13 @@
 }
 
 #box-info > p{
-    border-bottom: 2px solid rgb(33, 31, 32);
+    border-bottom: 1px solid rgba(33, 31, 32, 0.556);
     padding-bottom: 8px;
     margin-top: 12px;
     font-family: 'Work Sans', sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     color: rgb(243, 131, 33);
+    font-weight: 700;
 }
 
 #loja{
@@ -197,4 +198,13 @@
 
 #cartoes > img{
     width: 300px;
+}
+
+#btn-whatsapp > img{
+    width: 175px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    margin-left: 10px;
+    margin-bottom: 20px;
 }
