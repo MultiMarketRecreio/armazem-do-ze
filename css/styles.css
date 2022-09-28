@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Work+Sans:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Roboto:ital,wght@1,500&family=Work+Sans:wght@400;500;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#navbar {
+    width: 100%;
+    height: 180px;
+    background-color: rgb(243, 131, 33);
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.325);
+}
+
+#menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#menu>a>img {
+    width: 300px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+#lista-departamentos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    margin-top: 5px;
+}
+
+#lista-departamentos > li > a{
+    color: rgb(33, 31, 32);
+    font-size: 12px;
+    text-decoration: none;
+    font-family: 'Roboto Mono', monospace;
+}
+
+#lista-departamentos > li > a:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+#slider-show{
+    background-color: rgb(33, 31, 32);
+    width: 85%;
+    height: 160px;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+#box-slider-show{
+    width: 500%;
+    height: 300px;
+    display: flex;
+}
+
+#box-slider-show > input{
+    display: none;
+}
+
+.slider{
+    width: 25%;
+    position: relative;
+    transition: 0.5s;
+}
+
+.slider > img{
+    width: 85%;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -50%;
+}
+
+#radio4:checked ~ .first{
+    margin-left: -75%;
+}
+
+#box-info{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#box-info > p{
+    border-bottom: 2px solid rgb(33, 31, 32);
+    padding-bottom: 8px;
+    margin-top: 12px;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 16px;
+    color: rgb(243, 131, 33);
+}
+
+#loja{
+    width: 100%;
+    background-image: linear-gradient(to right, rgb(33, 31, 32),rgb(243, 131, 33));
+    color: white;
+    margin-top: 50px;
+    text-align: center;
+    font-family: 'Work Sans', sans-serif;
+    text-transform: uppercase;
+    padding: 5px 5px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.41);
+}
+
+#midia{
+    padding: 20px;
+    padding-bottom: 50%;
+    position: relative;
+}
+
+#midia > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+#promocao{
+    width: 310px;
+    margin: auto;
+}
+#promocao > img{
+    width: 310px;
+}
+
+#promocao-texto{
+    width: 100%;
+    background-color: rgb(220, 6, 24);
+    color: white;
+    padding: 10px;
+    margin-top: 50px;
+    margin-bottom: 15px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.501);
+    font-size: 20px;
+}
+
+#roda-pe{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    background-color:rgb(33, 31, 32);
+    color: white;
+    text-align:justify;
+    margin-top: 50px;
+    font-family: 'Open Sans', sans-serif;
+    padding-left: 10px;
+}
+
+#roda-pe > div > h2{
+    color: rgb(243, 131, 33);
+    margin-bottom: 5px;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+#roda-pe > div > p{
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+#rede-social > img{
+    width: 35px;
+}
+
+#cartoes{
+    width: 300px;
+    margin: auto;
+    margin-top: 15px;
+}
+
+#cartoes > img{
+    width: 300px;
+}
