@@ -77,7 +77,8 @@
 }
 
 .slider > img{
-    width: 85%;
+    width: 325px;
+    height: 180px;
 }
 
 #radio1:checked ~ .first{
